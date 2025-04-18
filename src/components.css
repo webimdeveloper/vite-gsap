@@ -1,0 +1,23 @@
+@layer components {
+  .ws_masonry__item {
+    break-inside: avoid;
+    padding: 2rem calc(var(--unit) * 1.5);
+    margin-bottom: var(--unit);
+    background-color: var(--main-widget-bg-color);
+    border: 1px solid var(--main-widget-border-color);
+    border-radius: calc(var(--unit) / 2);
+  }
+  .ws_masonry__links ul {
+    display: flex; 
+    gap: var(--unit);
+    list-style: none; 
+    height: auto;
+    padding: 0;
+  }
+  .ws_masonry__links img {
+    height: calc(var(--unit) * 2);
+  }
+  .ws_masonry__links a:hover img {
+    filter: brightness(1.2); /* Brighten the image on hover */
+  }
+}
